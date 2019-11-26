@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>登录</title>
+
+  <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){  if(item.css){ %>
+    <link href="<%= item.css %>" rel="stylesheet" />
+  <% }}) %>
+</head>
+<body>
+  <% htmlWebpackPlugin.options.cdnConfig.forEach(function(item){ if(item.js && !htmlWebpackPlugin.options.onlyCss){ %>
+    <script type="text/javascript" src="<%= item.js %>"></script>
+  <% }}) %>
+  <!-- built files will be auto injected -->
+</body>
+</html>

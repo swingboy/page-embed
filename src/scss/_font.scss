@@ -1,0 +1,6 @@
+@for $i from 12 through 36{
+	.fs-#{$i} {
+		font-size: unquote($i + 'px');
+	}
+}
+
