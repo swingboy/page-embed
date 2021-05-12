@@ -65,6 +65,6 @@
     "hark": "^1.2.3",
     "query-string": "^6.3.0",
     "react-id-swiper": "^1.6.9",
-    "swiper": "^4.4.6"
+    "swiper": "^6.5.1"
   }
 }
